@@ -1,0 +1,112 @@
+/* 
+Project: Xinghufu - Portal do Atleta
+Developer: Joao Devson Mucavel
+*/
+:root{
+    --clr-primary: #4d4d4d;
+    --clr-secondary: #7b7b7b;
+    --clr-cream: #fbb03b;
+    --clr-red: #c1272d;
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+    --clr-blue: #0d103a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-size: 62.5%;
+}
+
+/*===================================
+            GENERAL STYLES 
+=====================================*/
+.wraper{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.grid {
+    display: grid;
+}
+
+/*===================================
+            HEADER STYLES 
+=====================================*/
+.main-nav {
+    grid-template-columns: 25fr 75fr;
+    background-color: var(--clr-primary);
+    border-top: 0.2rem solid var(--clr-red);
+    border-bottom: 0.2rem solid var(--clr-red);
+}
+.logo {
+    padding-top: 0.4rem;
+    text-align: center;
+}
+.logo img{
+    width: 10rem;
+}
+.menu {
+    background-color: var(--clr-white);
+    display: flex;
+    justify-content: right;
+    padding-right: 8rem;
+    font-size: 1.2rem;
+}
+.menu ul{
+    display: flex;
+    border-radius: 25px;
+}
+.menu ul li{
+    list-style: none;
+    padding: 0.8rem 0;
+}
+.menu li a{
+    color: var(--clr-primary);
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    text-decoration: none;
+}
+.menu li:hover {
+    background-color: var(--clr-secondary);
+    cursor: pointer;
+}
+.menu li:hover > .menu li a {
+    color: var(--clr-white);
+}
+
+/*===================================
+            MAIN STYLES 
+=====================================*/
+.main-slider {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#0d103a,#1f2c92);
+}
+.main-slider img {
+    width: 35%;
+}
+
+/*===================================
+            FOOTER STYLES 
+=====================================*/
+footer{
+    width: 100%;
+    padding: 1.2rem;
+    background-color: var(--clr-blue);
+}
+.footer-logo img {
+    width: 6rem;
+}
